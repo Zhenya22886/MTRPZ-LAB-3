@@ -1,4 +1,4 @@
-FROM golang:1.24
+FROM golang:1.24 AS builder
 
 WORKDIR /application
 
@@ -8,6 +8,14 @@ RUN go mod download
 
 COPY . .
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o build/fizzbuzz
+RUN CGO_ENABLED=0 GOOS=linux go build -o fizzbuzz
 
-CMD [ "./build/fizzbuzz", "serve" ]
+FROM scratch
+
+WORKDIR /application
+
+COPY --from=builder /application/fizzbuzz .
+
+COPY --from=builder /application/templates ./templates
+
+CMD [ "./fizzbuzz", "serve" ]
