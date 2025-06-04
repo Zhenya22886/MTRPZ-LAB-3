@@ -1,0 +1,24 @@
+{
+  "name": "lab3-javascript-project",
+  "version": "1.0.0",
+  "description": "Lab for KPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhenya22886/MTRPZ-LAB-3.git#main"
+  },
+  "keywords": [
+    "Docker",
+    "docker-compose",
+    "node"
+  ],
+  "author": "Zhenya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhenya22886/MTRPZ-LAB-3/issues"
+  },
+  "homepage": "https://github.com/Zhenya22886/MTRPZ-LAB-3/tree/main#readme"
+}
