@@ -4,6 +4,7 @@
   "description": "Lab for KPI",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/Zhenya22886/MTRPZ-LAB-3/issues"
   },
-  "homepage": "https://github.com/Zhenya22886/MTRPZ-LAB-3/tree/main#readme"
+  "homepage": "https://github.com/Zhenya22886/MTRPZ-LAB-3/tree/main#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.16.0"
+  }
 }
